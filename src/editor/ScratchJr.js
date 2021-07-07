@@ -83,6 +83,10 @@ export default class ScratchJr {
         changed = newChanged;
     }
 
+    static get changed () {
+        return changed;
+    }
+
     static set storyStarted (newStoryStarted) {
         storyStarted = newStoryStarted;
     }
@@ -126,6 +130,10 @@ export default class ScratchJr {
 
     static get currentProject () {
         return currentProject;
+    }
+
+    static set currentProject (md5) {
+        currentProject = md5;
     }
 
     static get editmode () {
